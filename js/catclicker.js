@@ -23,7 +23,7 @@ window.addEventListener('load',function(){
 
 	// function for counting clicks and updating text
 	function updateCounter(numClicks){
-		counterText = "You clicked that cat " + numClicks + " times!"
+		counterText = "You clicked that cat <b>" + numClicks + "</b> times!"
 		clickCounter.innerHTML = counterText;
 	}
 });
