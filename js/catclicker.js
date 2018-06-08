@@ -25,5 +25,12 @@ window.addEventListener('load',function(){
 	function updateCounter(numClicks){
 		counterText = "You clicked that cat <b>" + numClicks + "</b> times!"
 		clickCounter.innerHTML = counterText;
+		if(numClicks === 1){
+			catImage.src="assets/cat-half-awake.png";
+		} else if(numClicks === 2){
+			catImage.src="assets/cat-awake.png";
+		} else if(numClicks === 10){
+			catImage.src="assets/cat-bored.png";
+		}
 	}
 });
